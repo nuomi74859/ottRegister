@@ -1,0 +1,2 @@
+/*! ottRegister 20-08-2014 */
+seajs.config({paths:{js:"/js",ui:"/js/ui",widget:"/widget"},alias:{jquery:"widget/jquery/jquery.js",bootstrap:"widget/BootStrap/js/bootstrap.min.js",angular:"widget/AngularJS/angular/angular.min.js"}});
