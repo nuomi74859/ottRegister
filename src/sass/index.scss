@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 div, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -19,6 +21,7 @@ $colorCancel:#EBD3BD;
   position: relative;
   margin: 0 auto;
   background: #72D0F4;
+  @include background(linear-gradient(top, #72D0F4,#7db9e8));
   overflow: hidden;
   zoom:0.667;
   .imgo-container {
@@ -41,6 +44,7 @@ $colorCancel:#EBD3BD;
           font-size:30px;
           background: rgb(22, 145, 190);
           -webkit-transition: all .2s ease-in-out;
+          @include box-shadow(rgba(black,0.3) 20px 20px 20px);
           opacity: 0.7;
           color:white;
           border-radius:16px;
@@ -67,8 +71,6 @@ $colorCancel:#EBD3BD;
             background:#166BA2;
             .nav-op {
               -webkit-transform: translate3d(150px, 0, 0);
-//              -webkit-animation:gravity .5s ease-in-out forwards;
-//              -webkit-backface-visibility: hidden;
               opacity: 1;
             }
           }
@@ -77,6 +79,13 @@ $colorCancel:#EBD3BD;
       .tab-content {
         font-size:40px;
         color:white;
+        .tab-pane {
+          padding:50px;
+
+          @include background-image(linear_gradient(right top,#72D0F4,#7db9e8));
+          @include border-radius(16px);
+          @include box-shadow(rgba(black,0.1) 30px 30px 30px);
+        }
         input {
           width: 100%;
           height: auto;
@@ -137,6 +146,9 @@ $colorCancel:#EBD3BD;
     animation: breathe 1s linear infinite alternate;
   }
 }
+.btn-warp {
+  opacity: 0;
+}
 .animate-helix {
   opacity: 0;
   -webkit-animation:helix 1s ease-in-out forwards;
@@ -162,7 +174,7 @@ $colorCancel:#EBD3BD;
 
 @-webkit-keyframes helix {
   0% {
-    -webkit-transform: perspective(400px) rotateX(90deg) translate3d(-300px, -200px, 0);
+    -webkit-transform: perspective(400px) rotateX(90deg) translate3d(-600px, -600px, -600px);
     opacity: 0;
   }
   40% {

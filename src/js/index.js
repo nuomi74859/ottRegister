@@ -3,9 +3,9 @@
  */
 define(function(require){
     require('jquery');
-//    require('angular');
+    $('.btn-warp').addClass('animate-helix');
     setTimeout(function(){
-        require.async(['angular','js/tvKey.source.js','bootstrap'],function(){
+        require.async(['js/tvKey.source.js','bootstrap'],function(){
             var $input = $('input');
             var $temp = '';
             akh.parent='html';
