@@ -3,9 +3,10 @@
  */
 define(function(require){
     require('jquery');
+    require('bootstrap');
     $('.btn-warp').addClass('animate-helix');
     setTimeout(function(){
-        require.async(['js/tvKey.source.js','bootstrap'],function(){
+        require.async(['js/tvKey.source.js'],function(){
             var $input = $('input');
             var $temp = '';
             akh.parent='html';

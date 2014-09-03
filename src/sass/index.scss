@@ -61,6 +61,9 @@ $colorCancel:#EBD3BD;
             top:28px;
             -webkit-transition:all .5s;
           }
+          &:hover {
+            -webkit-transform:scale(1.08);
+          }
           &.on {
             -webkit-transform:scale(1.08);
           }
@@ -81,10 +84,10 @@ $colorCancel:#EBD3BD;
         color:white;
         .tab-pane {
           padding:50px;
-
           @include background-image(linear_gradient(right top,#72D0F4,#7db9e8));
           @include border-radius(16px);
           @include box-shadow(rgba(black,0.1) 30px 30px 30px);
+          @include transition(opacity .2s);
         }
         input {
           width: 100%;
@@ -148,19 +151,25 @@ $colorCancel:#EBD3BD;
 }
 .btn-warp {
   opacity: 0;
+  margin: {
+    bottom:30px;
+  }
 }
 .animate-helix {
   opacity: 0;
-  -webkit-animation:helix 1s ease-in-out forwards;
-  -webkit-animation-delay:2.6s;
+  -webkit-animation:helix .8s ease-in-out forwards;
+//  -webkit-animation-delay:2.6s;
   &:nth-child(1) {
-    -webkit-animation-delay:1s;
+    -webkit-animation-delay:.2s;
   }
   &:nth-child(2) {
-    -webkit-animation-delay:.8s;
+    -webkit-animation-delay:.4s;
   }
   &:nth-child(3) {
-    -webkit-animation-delay:1.8s;
+    -webkit-animation-delay:.8s;
+  }
+  &:nth-child(4) {
+    -webkit-animation-delay:1s;
   }
 }
 @-webkit-keyframes breathe{

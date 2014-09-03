@@ -9,7 +9,7 @@ seajs.config({
     },
     alias: {
         'jquery':'widget/jquery/jquery.js',
-        'bootstrap':'widget/BootStrap/js/bootstrap.min.js',
+        'bootstrap':'widget/bootStrap-3.2.0-dist/js/bootstrap.min.js',
         'angular':'widget/AngularJS/angular/angular.min.js'
     }
 });

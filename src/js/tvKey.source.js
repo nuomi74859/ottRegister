@@ -13,7 +13,7 @@ $(document).ready(function(e) {
         this.defaultBtn = 'defaultBtn';
         this.keyBoardChars = ['@','~', '!', '_', '-', '#', '&', '*', '(', ')']; //键盘特殊字符
 
-        this.debug = true;
+        this.debug = false;
 
         if (AndroidPlatform) {
             //ANDORID
