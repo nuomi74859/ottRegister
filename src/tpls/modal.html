@@ -3,7 +3,26 @@
     <h4 class="modal-title" id="myModalLabel">找回密码</h4>
 </div>
 <div class="modal-body">
-    ...
+    <form role="form">
+        <div class="form-group">
+            <label for="mobile">帐号</label>
+            <input type="text" class="form-control focusBtn" id="mobile" placeholder="帐号">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="mobilePassword">新密码</label>
+            <input type="password" class="form-control focusBtn" id="mobilePassword" placeholder="请输入新密码">
+        </div>
+        <br>
+        <div class="form-group row">
+            <div class="col-xs-6">
+                <input type="password" class="form-control focusBtn" id="code" placeholder="请输入验证码">
+            </div>
+            <div class="col-xs-6">
+                <span class="btn btn-default">点击获取验证码</span>
+            </div>
+        </div>
+    </form>
 </div>
 <div class="modal-footer">
     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>

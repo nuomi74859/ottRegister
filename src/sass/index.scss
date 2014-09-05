@@ -91,7 +91,7 @@ $colorCancel:#EBD3BD;
           @include box-shadow(rgba(black,0.1) 30px 30px 30px);
           @include transition(opacity .2s);
         }
-        input {
+        input[type=text],input[type=password] {
           width: 100%;
           height: auto;
           padding: 20px;
@@ -120,6 +120,7 @@ $colorCancel:#EBD3BD;
   }
 }
 .on {
+  color:#ffffff;
   background:rgba(0,0,0,0.5);
 }
 .imgo-btn {

@@ -11,10 +11,10 @@ define(function(require){
             var $temp = '';
             akh.parent='html';
             akh.init();
-            $input.tooltip({
-                title:'按确认呼出键盘',
-                placement:'right'
-            });
+//            $input.tooltip({
+//                title:'按确认呼出键盘',
+//                placement:'right'
+//            });
             $('.nav a').click(function(){
                 setTimeout(function(){
                     akh.parent='html';
