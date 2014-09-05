@@ -138,6 +138,6 @@ module.exports = function(grunt) {
 //    grunt.loadNpmTasks('grunt-contrib-connect');
 
 
-    grunt.registerTask('default', ['concat', 'uglify','sass','compass','htmlmin','imagemin']);
+    grunt.registerTask('default', ['uglify','compass','htmlmin','imagemin']);
     grunt.registerTask('server',['connect','watch']);
 };
